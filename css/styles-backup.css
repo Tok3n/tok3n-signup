@@ -7679,19 +7679,31 @@ html.flexbox .content {
   border: 1px solid #dddddd;
   background: white;
 }
+@media (max-width: 768px) {
+  /* line 15, ../../_sass/_signup.sass */
+  html.flexbox .content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  /* line 15, ../../_sass/_signup.sass */
+  html.flexbox .content {
+    padding: 1rem;
+  }
+}
 
-/* line 25, ../../_sass/_signup.sass */
+/* line 27, ../../_sass/_signup.sass */
 h2 {
   margin-top: 22px;
   margin-bottom: 22px;
 }
 
-/* line 30, ../../_sass/_signup.sass */
+/* line 32, ../../_sass/_signup.sass */
 .signup-form .row {
   margin-top: 1em;
 }
 @media (min-width: 768px) {
-  /* line 32, ../../_sass/_signup.sass */
+  /* line 34, ../../_sass/_signup.sass */
   .signup-form input,
   .signup-form .btn {
     font-weight: 300;
@@ -7700,16 +7712,16 @@ h2 {
   }
 }
 
-/* line 39, ../../_sass/_signup.sass */
+/* line 41, ../../_sass/_signup.sass */
 .info-box {
   margin-bottom: 1rem;
 }
 
-/* line 42, ../../_sass/_signup.sass */
+/* line 44, ../../_sass/_signup.sass */
 .input-group-addon-select {
   padding: 0;
 }
-/* line 44, ../../_sass/_signup.sass */
+/* line 46, ../../_sass/_signup.sass */
 .input-group-addon-select select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -7720,16 +7732,16 @@ h2 {
   position: relative;
   cursor: context-menu;
 }
-/* line 54, ../../_sass/_signup.sass */
+/* line 56, ../../_sass/_signup.sass */
 .input-group-addon-select select:not(:valid) {
   background-color: #fcf8e3;
 }
-/* line 56, ../../_sass/_signup.sass */
+/* line 58, ../../_sass/_signup.sass */
 .input-group-addon-select select:valid {
   background-color: #dff0d8;
 }
 @media (min-width: 768px) {
-  /* line 44, ../../_sass/_signup.sass */
+  /* line 46, ../../_sass/_signup.sass */
   .input-group-addon-select select {
     font-size: 150%;
     padding: 11px;
