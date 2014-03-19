@@ -7655,33 +7655,57 @@ button.close {
   font-size: 0.5em;
 }
 
+/* line 1, ../../_sass/_progress.sass */
+.progress-wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+/* line 6, ../../_sass/_progress.sass */
+.progress-wrapper .progress {
+  margin-bottom: 0;
+  height: 0.25rem;
+  border-radius: 0;
+}
+
 /* line 1, ../../_sass/_signup.sass */
 body {
   background: #eeeeee;
 }
 
-/* line 6, ../../_sass/_signup.sass */
+/* line 4, ../../_sass/_signup.sass */
+.content {
+  position: relative;
+}
+
+/* line 9, ../../_sass/_signup.sass */
 html.flexbox .main {
   display: -webkit-box;
   display: -moz-box;
-  display: -ms-box;
-  display: box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-align-items: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   min-height: 100vh;
 }
 @media (max-height: 24em) {
-  /* line 6, ../../_sass/_signup.sass */
+  /* line 9, ../../_sass/_signup.sass */
   html.flexbox .main {
     margin-top: 15px;
     margin-bottom: 15px;
   }
 }
-/* line 19, ../../_sass/_signup.sass */
+/* line 18, ../../_sass/_signup.sass */
 html.flexbox .content {
   padding: 3rem 4rem 4rem;
   border: 1px solid #dddddd;
@@ -7689,36 +7713,36 @@ html.flexbox .content {
   margin-bottom: 0;
 }
 @media (max-width: 992px) {
-  /* line 19, ../../_sass/_signup.sass */
+  /* line 18, ../../_sass/_signup.sass */
   html.flexbox .content {
     padding: 2rem;
   }
 }
 @media (max-width: 768px) {
-  /* line 19, ../../_sass/_signup.sass */
+  /* line 18, ../../_sass/_signup.sass */
   html.flexbox .content {
     padding: 1rem;
   }
 }
 @media (max-width: 480px) {
-  /* line 19, ../../_sass/_signup.sass */
+  /* line 18, ../../_sass/_signup.sass */
   html.flexbox .content {
     padding: 0;
   }
 }
 
-/* line 34, ../../_sass/_signup.sass */
+/* line 33, ../../_sass/_signup.sass */
 h2 {
   margin-top: 22px;
   margin-bottom: 22px;
 }
 
-/* line 39, ../../_sass/_signup.sass */
+/* line 38, ../../_sass/_signup.sass */
 .signup-form .row {
   margin-top: 1em;
 }
 @media (min-width: 768px) {
-  /* line 41, ../../_sass/_signup.sass */
+  /* line 40, ../../_sass/_signup.sass */
   .signup-form input,
   .signup-form .btn {
     font-weight: 300;
@@ -7727,16 +7751,16 @@ h2 {
   }
 }
 
-/* line 48, ../../_sass/_signup.sass */
+/* line 47, ../../_sass/_signup.sass */
 .info-box {
   margin-bottom: 1rem;
 }
 
-/* line 51, ../../_sass/_signup.sass */
+/* line 50, ../../_sass/_signup.sass */
 .input-group-addon-select {
   padding: 0;
 }
-/* line 53, ../../_sass/_signup.sass */
+/* line 52, ../../_sass/_signup.sass */
 .input-group-addon-select select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -7747,16 +7771,16 @@ h2 {
   position: relative;
   cursor: context-menu;
 }
-/* line 63, ../../_sass/_signup.sass */
+/* line 62, ../../_sass/_signup.sass */
 .input-group-addon-select select:not(:valid) {
   background-color: #fcf8e3;
 }
-/* line 65, ../../_sass/_signup.sass */
+/* line 64, ../../_sass/_signup.sass */
 .input-group-addon-select select:valid {
   background-color: #dff0d8;
 }
 @media (min-width: 768px) {
-  /* line 53, ../../_sass/_signup.sass */
+  /* line 52, ../../_sass/_signup.sass */
   .input-group-addon-select select {
     font-size: 150%;
     padding: 11px;
