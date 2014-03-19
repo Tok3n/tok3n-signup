@@ -11,26 +11,30 @@ form.container-fluid.signup-form
   .row
     .col-md-6
       .form-group
-        input.form-control(type='text', list='countryList')
+        label.sr-only(for="countrySelect") Country
+        input.form-control#countrySelect(type='text', list='countrySelectList', placeholder="Country")
     .col-md-6
       .form-group
         label.sr-only(for='phoneNumber') Phone Number
         .input-group
           span#phoneNumberCountryCode.input-group-addon +1
           input#phoneNumber.form-control(type='phone', placeholder='Phone number')
+  
   .row
     .col-md-6.col-md-offset-3
       a.btn.btn-success.btn-block.btn-lg(href='{{ site.baseurl }}pages/confirm-code', role='button') Text Me
+  
   .row
-    p.text-center.text-subtle-regular
-      span.block
-        | Please enter your phone number so we can verify your account.
-      span.block
-        | Or authenticate with a
-        a(href='#') QR code
-        | or
-        a(href='#') phone call
-        | .
+    .col-md-12
+      p.text-center.text-subtle-regular
+        span.block
+          | Please enter your phone number so we can verify your account.
+        span.block
+          | Or authenticate with a
+          a(href='#') QR code
+          | or
+          a(href='#') phone call
+          | .
 
 
 
