@@ -7670,40 +7670,52 @@ html.flexbox .main {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
-/* line 15, ../../_sass/_signup.sass */
+@media (max-height: 24em) {
+  /* line 6, ../../_sass/_signup.sass */
+  html.flexbox .main {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+/* line 16, ../../_sass/_signup.sass */
 html.flexbox .content {
   padding: 3rem 4rem 4rem;
   border: 1px solid #dddddd;
   background: white;
+  margin-bottom: 0;
 }
-@media (max-width: 768px) {
-  /* line 15, ../../_sass/_signup.sass */
+@media (max-width: 992px) {
+  /* line 16, ../../_sass/_signup.sass */
   html.flexbox .content {
     padding: 2rem;
   }
 }
-@media (max-width: 480px) {
-  /* line 15, ../../_sass/_signup.sass */
+@media (max-width: 768px) {
+  /* line 16, ../../_sass/_signup.sass */
   html.flexbox .content {
     padding: 1rem;
   }
 }
+@media (max-width: 480px) {
+  /* line 16, ../../_sass/_signup.sass */
+  html.flexbox .content {
+    padding: 0;
+  }
+}
 
-/* line 27, ../../_sass/_signup.sass */
+/* line 31, ../../_sass/_signup.sass */
 h2 {
   margin-top: 22px;
   margin-bottom: 22px;
 }
 
-/* line 32, ../../_sass/_signup.sass */
+/* line 36, ../../_sass/_signup.sass */
 .signup-form .row {
   margin-top: 1em;
 }
 @media (min-width: 768px) {
-  /* line 34, ../../_sass/_signup.sass */
+  /* line 38, ../../_sass/_signup.sass */
   .signup-form input,
   .signup-form .btn {
     font-weight: 300;
@@ -7712,16 +7724,16 @@ h2 {
   }
 }
 
-/* line 41, ../../_sass/_signup.sass */
+/* line 45, ../../_sass/_signup.sass */
 .info-box {
   margin-bottom: 1rem;
 }
 
-/* line 44, ../../_sass/_signup.sass */
+/* line 48, ../../_sass/_signup.sass */
 .input-group-addon-select {
   padding: 0;
 }
-/* line 46, ../../_sass/_signup.sass */
+/* line 50, ../../_sass/_signup.sass */
 .input-group-addon-select select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -7732,16 +7744,16 @@ h2 {
   position: relative;
   cursor: context-menu;
 }
-/* line 56, ../../_sass/_signup.sass */
+/* line 60, ../../_sass/_signup.sass */
 .input-group-addon-select select:not(:valid) {
   background-color: #fcf8e3;
 }
-/* line 58, ../../_sass/_signup.sass */
+/* line 62, ../../_sass/_signup.sass */
 .input-group-addon-select select:valid {
   background-color: #dff0d8;
 }
 @media (min-width: 768px) {
-  /* line 46, ../../_sass/_signup.sass */
+  /* line 50, ../../_sass/_signup.sass */
   .input-group-addon-select select {
     font-size: 150%;
     padding: 11px;
