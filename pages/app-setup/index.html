@@ -20,59 +20,44 @@
           <div class="content">
             
             <div class="container-fluid info-box">
-  <h2 class="text-center text-weight-light">
-    Set up your first app
-    <span class="subtitle">
-      Improve your application security now
-    </span>
-  </h2>
+  <h2 class="text-center text-weight-light">Set up your first app<span class="subtitle">Improve your application security now</span></h2>
 </div>
-
 <form class="container-fluid signup-form">
-
   <div class="row">
     <div class="col-md-12">
       <div class="form-group">
-        <label class="sr-only" for="applicationName">Application Name</label>
-        <input type="text" class="form-control" id="applicationName" placeholder="Application name">
+        <label for="applicationName" class="sr-only">Application Name</label>
+        <input id="applicationName" type="text" placeholder="Application name" class="form-control"/>
       </div>
     </div>
   </div>
-
-
-<!--   <div class="row">
-    <div class="form-group">
-      <div class="input-group">
-        <span class="input-group-addon input-group-addon-select">
-          <select required>
-            <option value="" disabled>Method ▾</option>
-            <option value="get">GET</option>
-            <option value="post">POST</option>
-          </select>
-        </span>
-        <input type="text" class="form-control" id="callbackUrl" placeholder="Callback URL">
-    </div>
-  </div> -->
-
+  <!--
+  .row
+    .form-group
+      .input-group
+        span.input-group-addon.input-group-addon-select
+          select(required='required')
+            option(value='', disabled='disabled') Method ▾
+            option(value='get') GET
+            option(value='post') POST
+        input#callbackUrl.form-control(type='text', placeholder='Callback URL')
+        
+  -->
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
         <label class="sr-only">HTTP Method</label>
-        <input type="text" class="form-control" id="httpMethod" list="httpMethodList"placeholder="Method">
+        <input id="httpMethod" type="text" list="httpMethodList" placeholder="Method" class="form-control"/>
       </div>
     </div>
-
     <div class="col-md-9">
       <div class="form-group">
         <label class="sr-only">Callback URL</label>
-        <input type="text" class="form-control" id="callbackUrl" placeholder="Callback URL">
+        <input id="callbackUrl" type="text" placeholder="Callback URL" class="form-control"/>
       </div>
     </div>
   </div>
-
-
 </form>
-
 <datalist id="httpMethodList">
   <option value="GET">GET</option>
   <option value="POST">POST</option>
